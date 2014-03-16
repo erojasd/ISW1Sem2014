@@ -7,5 +7,7 @@ Repositorio para la asignatura de Ingenieria de Software
 Integrantes
 ===========
 Carlos Guerrero Urbina
-Daniel Guiterrez Pizarr
+
+Daniel Guiterrez Pizarro
+
 Ricardo López Núñez
