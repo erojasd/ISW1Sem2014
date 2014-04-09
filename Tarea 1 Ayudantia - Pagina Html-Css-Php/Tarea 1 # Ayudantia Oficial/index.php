@@ -23,9 +23,9 @@
                 1=>"BUDA: Todo lo que somos es el resultado de lo que hemos pensado está fundado en nuestros pensamientos y está hecho de nuestros pensamientos",
                 2=>"JAVIER IMBRODA: El talento sin esfuerzo solo sirve para divertirse",
                 3=>"GABRIEL ALEMANY: La actitud positiva debe ser un hábito, trabajado todos los días sobre todo en las situaciones adversas",
-	        4=> "CAROLINA HERRERA: La educación es el principal vestido para la fiesta de la vida.",
-	        5=> "H. ROSS PEROT: La mayoría de las personas abandona justo cuando está a punto de conseguir el éxito. Lo deja a un metro de la meta. Lo deja en el último momento del partido, a un punto de la victoria",
-		6=> "JOSEF AJRAM: Avanzar, conseguir lo que te propones supone esfuerzo, entrenamiento, sufrimiento...¿Existe la suerte? No lo sabemos...pero lo que sí que sabemos es que todo está en nuestras manos...Un nuevo día, un nuevo reto.   "
+	        4=>"CAROLINA HERRERA: La educación es el principal vestido para la fiesta de la vida.",
+	        5=>"H. ROSS PEROT: La mayoría de las personas abandona justo cuando está a punto de conseguir el éxito. Lo deja a un metro de la meta. Lo deja en el último momento del partido, a un punto de la victoria",
+		6=>"JOSEF AJRAM: Avanzar, conseguir lo que te propones supone esfuerzo, entrenamiento, sufrimiento...¿Existe la suerte? No lo sabemos...pero lo que sí que sabemos es que todo está en nuestras manos...Un nuevo día, un nuevo reto.   "
                 );
                 $numero = rand(1,6);
                 echo "$vector[$numero]";                         
