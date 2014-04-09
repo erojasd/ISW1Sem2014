@@ -1,0 +1,88 @@
+
+
+#nose
+{
+	border: solid black 5px;
+	margin: 20px;
+	background-color: white;
+	position: relative;
+	left: 600px;
+	top: 50 px;
+	height: 170px;
+	width: 200px;
+	transition-property: background;
+    transition-duration: 0.5s;
+	font-family: verdana;
+	font-size: 40px;
+}
+
+#nose:hover {
+    background: #CCDD55;
+}
+
+.cont
+{
+	width: 100%;
+	height:170px;
+	background-color: black;
+}
+
+#tabla0
+{
+	position: relative;
+	top:15px;
+	font-family: Arial;
+	font-size: 18px;
+	color:#0BE239;
+	background: #000000;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla1
+{
+	position: relative;
+	top:35px;
+	font-family: verdana;
+	font-size: 18px;
+	color: white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla1:hover {
+    background: #982C2C;
+	color: white;
+}
+
+#tabla2
+{
+	position: relative;
+	top:50px;	
+	font-family: verdana;
+	font-size: 18px;
+	color:white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla2:hover {
+    background: #982C2C;
+	color: white;
+}
+
+#tabla3
+{
+	position: relative;
+	top:65px;
+	font-family: verdana;
+	font-size: 18px;
+	color:white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla3:hover {
+    background: #982C2C;
+	color: white;
+}
