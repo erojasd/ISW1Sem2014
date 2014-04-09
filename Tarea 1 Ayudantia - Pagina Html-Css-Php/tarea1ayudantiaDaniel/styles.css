@@ -1,0 +1,70 @@
+
+
+#nose
+{
+	border: solid black 5px;
+	margin: 20px;
+	background-color: white;
+	position: relative;
+	left: 600px;
+	top: 50 px;
+	height: 170px;
+	width: 200px;
+	transition-property: background;
+    transition-duration: 0.5s;
+	font-family: verdana;
+	font-size: 40px;
+}
+
+#nose:hover {
+    background: #CCDD55;
+}
+
+.cont
+{
+	width: 100%;
+	height:170px;
+	background-color: black;
+}
+
+#tabla1
+{
+	position: relative;
+	top:15px;
+	font-family: verdana;
+	color:white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla1:hover {
+    background: #000000;
+}
+
+#tabla2
+{
+	position: relative;
+	top:25px;
+	font-family: verdana;
+	color:white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla2:hover {
+    background: #000000;
+}
+
+#tabla3
+{
+	position: relative;
+	top:35px;
+	font-family: verdana;
+	color:white;
+	transition-property: background;
+    transition-duration: 0.9s;
+}
+
+#tabla3:hover {
+    background: #000000;
+}
