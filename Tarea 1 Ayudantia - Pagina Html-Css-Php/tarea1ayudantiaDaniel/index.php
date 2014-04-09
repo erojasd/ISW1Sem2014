@@ -16,29 +16,7 @@
 				 <div><IMG src="ban.png" WIDTH=100% HEIGHT=100% position: relative></div>
 				 <h2><center> Frases </center></h2>
 				 <br>
-				 <div id="frases">
-                    <footer>
-                        <p>
-                          
-                        <?
-                        
-                         
-                         $vector = array(
-                             1=>"”Todo lo que somos es el resultado de lo que hemos pensado; 
-							 está fundado en nuestros pensamientos y está hecho de nuestros pensamientos..” Buda",
-                             2=>"”Construya el algoritmo Bonivka” Ricardo 5 lucas Corbinaud",
-                             3=>"”asdf”  qwerty",
-                             
-                         );
-                         $numero = rand(1,3);
-                         echo "$vector[$numero]";
-                         
-                         ?>
-                        </p>
-                        <p>
-
-                    </footer>
-            </div>
+				
 	
 					<TABLE border="1" align=center id= tabla1>
 											<COLGROUP>
