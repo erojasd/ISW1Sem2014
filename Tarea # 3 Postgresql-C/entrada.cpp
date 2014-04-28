@@ -235,8 +235,8 @@ cout <<"El codigo se tiene que ejecutar de la siguiente forma (Asumiendo que el 
 cout<<"Primer paso: Haber instalado las librerias correspondientes a PostgreSQL (En el caso de Ubuntu: sudo apt-get install libpq-dev)"<<endl;
 cout<<"Segundo Paso: Abrir la terminal"<<endl;
 cout<<"Tercer paso: Posicionarse en la carpeta donde está el archivo (Por ejemplo, cd Descargas si esta en la carpeta Descargas)"<<endl;
-cout<<"Cuarto paso: Escribir en la terminal 'g++ entrada.cpp -o Ej -I/usr/include/postgresql -I/usr/include -lpq', donde '-I/usr/include/postgresql corresponde a las librerias de PostgreSQL'"<<endl;
-cout<<"Quinto paso: Arrancar el ejecutable, con cualquiera de las siguientes opciones: '-r', '-g tienda' (tienda = CencoSux || tienda  = Replay || tienda = Falaferia || tienda = Porahi), -bh, -v o -h"<<endl;
+cout<<"Cuarto paso: Escribir en la terminal 'g++ entrada.cpp -o Ej -I/usr/include/postgresql -I/usr/include -lpq', donde '-I/usr/include/postgresql corresponde a las ubicación en donde deberían estar las librerías necesarias para ejecutar el programa, si no están las librerías en esa carpeta (o simplemente la carpeta no existe), mover las librerías a esa carpeta o cambiar la ruta hasta la carpeta donde sí están las librerías'"<<endl;
+cout<<"Quinto paso: Arrancar el ejecutable, con cualquiera de las siguientes opciones: ./Ej (el nombre del ejecutable, en este caso 'Ej', es opcional, al igual que en el código para compilar el archivo) seguido de un '-r', '-g tienda' (tienda = CencoSux || tienda  = Replay || tienda = Falaferia || tienda = Porahi), -bh, -v o -h"<<endl;
 cout<<"Sexto paso: Evaluar el trabajo"<<endl;
 cout<<"Septimo paso: Continuar con la vida"<<endl;
 
