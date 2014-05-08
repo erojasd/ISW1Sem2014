@@ -358,5 +358,21 @@ tesorero(controlador)
 encargado de cuenta(modelo)
 \end_layout
 
+\begin_layout Section
+Anexo GitHub
+\end_layout
+
+\begin_layout Standard
+GitHub/rlopezn: 
+\begin_inset CommandInset href
+LatexCommand href
+name " Grupo 1 Ingeniería de Software"
+target "https://github.com/rlopezn/ISW1Sem2014"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
