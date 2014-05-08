@@ -24,3 +24,8 @@ Ademas se debe adjuntar los repositorios de github de cada integrante.
 - Se puede revisar y descargar del repositorio para su posterior revision en "Download ZIP" que descargara todo el repositorio en donde se encontrara la carpeta "Tarea 1 # Ayudantia Oficial" .
 
 
+
+Tarea N°2 - Ayudantia: Informe Patrones de Diseño
+=================================================
+
+Redactar un informe, acerca de los patrones de diseño en la ingenieria en software, detallando uno de éstos y dado un ejemplo de su uso en la vida cotidiana.
