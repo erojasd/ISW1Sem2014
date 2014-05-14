@@ -354,7 +354,6 @@ En mundo en constantes cambios respecto en tecnología, un ingeniero de software
  simule la propuesta anteriormente aludida utilizando la programación orientada
  a objetos en Java, así, a través de futuros cursos de programación y/o
  base de datos mejorar la idea y proponer una nuevas y mejoradas.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -362,12 +361,12 @@ Interfaz Gráfica (Vista)
 \end_layout
 
 \begin_layout Itemize
-Procesos Internos de recepcion/respuesta a las operaciones entre el modelo
- y la vista [Listeners en Java por ejemplo] (Controlador)
+Procesos Internos de recepcion-respuesta a las operaciones entre el modelo
+ y la vista (Listeners en Java por ejemplo) (Controlador)
 \end_layout
 
 \begin_layout Itemize
-Métodos del software [PoblarBaseDeDatos(parametros) en java] (Modelo)
+Métodos del software (PoblarBaseDeDatos(parametros) en java) (Modelo)
 \end_layout
 
 \begin_layout Section
