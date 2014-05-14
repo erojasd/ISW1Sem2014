@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{lscape}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language spanish
@@ -338,31 +341,33 @@ Ejemplo
 \end_layout
 
 \begin_layout Standard
-Un cliente llega a la sucursal de un banco y comienza interactuar con el
- cajero que se ubica en un cubículo, dicho cajero solicita datos como el
- el nombre, apellido paterno, apellido materno, rut, fecha de nacimiento
- y el monto , y donde el cliente pide su requerimiento, el cajero de la
- sucursal está controlado por el tesorero de la sucursal el cual conoce
- todos los términos de los trámites disponibles en el, el cajero timbra
- el papel y lo firma, si el tesorero aprobó el trámite que solicitó el cliente,
-  siendo de esta manera el tesorero verifica si el cliente tiene saldo disponibl
-e en su cuenta con el encargado de cuentas, si tiene fondo entonces el tesorero
- aprueba la solicitud  y procede a la bóveda de la sucursal.
- del banco retirando el efectivo y procede a entregar al cajero, después
- el cajero  le pasa el monto  al cliente  y el comprobante firmado y timbrado.
+En mundo en constantes cambios respecto en tecnología, un ingeniero de software
+ debe estar al corriente del estado del arte.
+ Para esto es necesario actualizarse en contenidos e ir a la par con el
+ avance, postulando y creando nuevos y/o mejorados sistemas de software
+ orientado a solucionar un problema el cual demanda una tediosa intervención
+ de una persona como por ejemplo en un día de elecciones, los votos, al
+ igual como se hacen en otros países, podrían hacerse mediante ordenadores
+ los cuales todos conectados mediante redes indicando en tiempo real los
+ resultados correspondientes.
+ En nuestro caso vamos a crear un sistema de software a baja escala que
+ simule la propuesta anteriormente aludida utilizando la programación orientada
+ a objetos en Java, así, a través de futuros cursos de programación y/o
+ base de datos mejorar la idea y proponer una nuevas y mejoradas.
  
 \end_layout
 
 \begin_layout Itemize
-Cajero (Vista)
+Interfaz Gráfica (Vista)
 \end_layout
 
 \begin_layout Itemize
-Tesorero (Controlador)
+Procesos Internos de recepcion/respuesta a las operaciones entre el modelo
+ y la vista [Listeners en Java por ejemplo] (Controlador)
 \end_layout
 
 \begin_layout Itemize
-Encargado de cuenta (Modelo)
+Métodos del software [PoblarBaseDeDatos(parametros) en java] (Modelo)
 \end_layout
 
 \begin_layout Section
