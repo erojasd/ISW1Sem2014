@@ -7,6 +7,14 @@
 #include <cstdlib>
 #include <fstream>
 #include <string.h>
+
+/*Para trabajar con XML se prueba la libreria pugixml */
+#include "pugiconfig.hpp"
+#include "pugixml.hpp"
+#include "pugixml.cpp"
+
+
+
 /*Constantes*/
 #define _TIME_
 #define N 15
@@ -15,6 +23,7 @@ using namespace std;
 
 /*Variables Globales*/
 char Pos2[N]; // se utiliza en funcion para pasar a mayuscula
+const char *host = "http://sebastian.cl/isw-rest/api/mensajeCifrado";
 
 /*Funcion para pasar a mayuscula el segundo parametro de entrada*/
 void PasarMayuscula(void)
@@ -31,15 +40,19 @@ int main(int argc, char *argv[])
 int entrada = 0, i=0;
 time_t tiempo = time(0);
 struct tm *tlocal = localtime(&tiempo);
-char SalidaFecha[128];
+char SalidaFecha[128], Fila[100];
 
 /*Se define cual es el parametro de entrada*/
 for(i=0;i< argc;i++)
 {
-if(strcmp(argv[i],"-d")==0)  entrada = 1;
-if(strcmp(argv[i],"-v")==0)  entrada = 2;
-
+    if(strcmp(argv[i],"-d")==0)  entrada = 1;
+    if(strcmp(argv[i],"-v")==0)  entrada = 2;
 }
+
+
+
+/*_________________________________________________________________________________________________________*/
+
 /*Si el programa se ejecuta opci ́on “-r” Debe entregar la sumatoria total de
 las ventas de cada una de las tiendas.*/
 if (entrada == 1)
