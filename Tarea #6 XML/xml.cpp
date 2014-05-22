@@ -22,8 +22,7 @@ using namespace std;
 /*Variables Globales*/
  // se utiliza en funcion para pasar a mayuscula
 char Pos2[N];
-// Mensaje a desencriptar
-char Mensaje [N];
+
 // Host de internet donde reside el mensaje
 const char *host = "http://sebastian.cl/isw-rest/api/mensajeCifrado";
 
@@ -42,6 +41,8 @@ int entrada = 0, i=0;
 time_t tiempo = time(0);
 struct tm *tlocal = localtime(&tiempo);
 char SalidaFecha[128], Fila[100];
+// Mensaje a desencriptar
+char Mensaje [N];
 
 /*Se define cual es el parametro de entrada*/
 for(i=0;i< argc;i++)
@@ -79,9 +80,9 @@ if (entrada == 1)
 		if (node_name == "mensaje")
 		{
 		    strcpy(Mensaje, node.child_value());
+		    cout<<"El mensaje obtenido fue: ";
 		    cout<<Mensaje<<endl;
 		}
-
 		else cout << "No se encontro el Mensaje" <<endl;
 	}
 
@@ -94,16 +95,18 @@ repositorio), y el nombre de los integrantes del grupo de trabajo.*/
 else if (entrada == 2)
 {
     strftime(SalidaFecha,128,"%m-%d-%y",tlocal);
-    printf("La fecha actual: %s\n",SalidaFecha);
+    cout<<"La fecha actual:";
+    cout<<SalidaFecha<<endl;
     strftime(SalidaFecha,128,"%H:%M:%S",tlocal);
-    printf("La hora actual: %s\n\n",SalidaFecha);
-    printf("Integrantes:\nRicardo Lopez\nCarlos Guerrero\nDaniel Gutierrez\n\n");
-    printf("Fecha de compilacion: ");
+    cout<<"La hora actual:";
+    cout<<SalidaFecha<<endl;
+    cout<<"Integrantes:\nRicardo Lopez\nCarlos Guerrero\nDaniel Gutierrez"<<endl;
+    cout<<"Fecha de compilacion: ";
     puts(__DATE__);
-    printf("Hora de compilacion: ");
+    cout<<"Hora de compilacion: ";
     puts(__TIME__); //Fecha de compilacion.
-    printf("\nVersion del programa: 1.5.2\n");
-    printf("Programa creado bajo el sistema operativo Ubuntu 13.10\n");
+    cout<<"\nVersion del programa: 1.5.2\n"<<endl;
+    cout<<"Programa creado bajo el sistema operativo Ubuntu 13.10\n";
 }
 else
 {
