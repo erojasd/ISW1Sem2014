@@ -9,9 +9,9 @@
 #include <string.h>
 
 /*Para trabajar con XML se prueba la libreria pugixml */
-#include "pugiconfig.hpp"
-#include "pugixml.hpp"
-#include "pugixml.cpp"
+#include "src/pugiconfig.hpp"
+#include "src/pugixml.hpp"
+#include "src/pugixml.cpp"
 
 /*Constantes*/
 #define _TIME_
