@@ -1,4 +1,4 @@
-/*Bibliotecas utilizadas*/
+/*Bibliotecas estandar utilizadas*/
 #include <iostream>
 #include <cstring>
 #include <stdio.h>
@@ -13,8 +13,6 @@
 #include "pugixml.hpp"
 #include "pugixml.cpp"
 
-
-
 /*Constantes*/
 #define _TIME_
 #define N 15
@@ -22,7 +20,11 @@
 using namespace std;
 
 /*Variables Globales*/
-char Pos2[N]; // se utiliza en funcion para pasar a mayuscula
+ // se utiliza en funcion para pasar a mayuscula
+char Pos2[N];
+// Mensaje a desencriptar
+char Mensaje [N];
+// Host de internet donde reside el mensaje
 const char *host = "http://sebastian.cl/isw-rest/api/mensajeCifrado";
 
 /*Funcion para pasar a mayuscula el segundo parametro de entrada*/
@@ -35,7 +37,6 @@ void PasarMayuscula(void)
 /*Funcion principal y cuerpo del programa*/
 int main(int argc, char *argv[])
 {
-
 /*Variables de la funcion principal*/
 int entrada = 0, i=0;
 time_t tiempo = time(0);
@@ -49,14 +50,40 @@ for(i=0;i< argc;i++)
     if(strcmp(argv[i],"-v")==0)  entrada = 2;
 }
 
-
-
 /*_________________________________________________________________________________________________________*/
 
-/*Si el programa se ejecuta opci ́on “-r” Debe entregar la sumatoria total de
-las ventas de cada una de las tiendas.*/
+/*Si el programa se ejecuta opción “-d” debe decifrar el mensaje propuesto en la pagina web
+"http://sebastian.cl/isw-rest/api/mensajeCifrado"*/
 if (entrada == 1)
 {
+    pugi::xml_document doc;
+    if (!doc.load_file("tarea.xml"))
+	{
+		cerr << "Error al cargar el documento XML." << endl;
+		return -1;
+	}
+	// Creamos un objeto nodo
+	pugi::xml_node root_node;
+	// Le asignamos el nodo principal comprobando que sea correcto sino no sigue el programa
+	if (!(root_node = doc.child("mensaje")))
+	{
+		cerr << "El documento no es un mapa valido." << endl;
+		return -2;
+	}
+    /*Se recorre la estructura del archivo, teniendo en cuenta que este no varia en el tiempo*/
+	for (pugi::xml_node node = root_node.first_child(); node; node = node.next_sibling())
+	{
+		string node_name = node.name();
+        /*Si encontramos la etiqueta mensaje se guarda su contenido en una variable global llamada Mensaje para su posterior
+        Desencriptacion*/
+		if (node_name == "mensaje")
+		{
+		    strcpy(Mensaje, node.child_value());
+		    cout<<Mensaje<<endl;
+		}
+
+		else cout << "No se encontro el Mensaje" <<endl;
+	}
 
 }
 
@@ -76,7 +103,7 @@ else if (entrada == 2)
     printf("Hora de compilacion: ");
     puts(__TIME__); //Fecha de compilacion.
     printf("\nVersion del programa: 1.5.2\n");
-    cout<<"Programa creado bajo el sistema operativo Ubuntu 13.10"<<endl;
+    printf("Programa creado bajo el sistema operativo Ubuntu 13.10\n");
 }
 else
 {
