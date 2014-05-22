@@ -37,7 +37,8 @@ void PasarMayuscula(void)
 int main(int argc, char *argv[])
 {
 /*Variables de la funcion principal*/
-int entrada = 0, i=0;
+int entrada = 0, i = 0;
+bool BanderaDePaso = false;
 time_t tiempo = time(0);
 struct tm *tlocal = localtime(&tiempo);
 char SalidaFecha[128], Fila[100];
@@ -61,7 +62,7 @@ if (entrada == 1)
     if (!doc.load_file("tarea.xml"))
 	{
 		cerr << "Error al cargar el documento XML." << endl;
-		return -1;
+		return 0;
 	}
 	// Creamos un objeto nodo
 	pugi::xml_node root_node;
@@ -69,23 +70,27 @@ if (entrada == 1)
 	if (!(root_node = doc.child("mensaje")))
 	{
 		cerr << "El documento no es un mapa valido." << endl;
-		return -2;
+		return 0;
 	}
     /*Se recorre la estructura del archivo, teniendo en cuenta que este no varia en el tiempo*/
 	for (pugi::xml_node node = root_node.first_child(); node; node = node.next_sibling())
 	{
 		string node_name = node.name();
-        /*Si encontramos la etiqueta mensaje se guarda su contenido en una variable global llamada Mensaje para su posterior
+        /*Si encontramos la etiqueta mensaje se guarda su contenido en una variable llamada Mensaje para su posterior
         Desencriptacion*/
 		if (node_name == "mensaje")
 		{
 		    strcpy(Mensaje, node.child_value());
-		    cout<<"El mensaje obtenido fue: ";
-		    cout<<Mensaje<<endl;
+		    cout << "El mensaje obtenido fue: ";
+		    cout << Mensaje << endl;
+		    BanderaDePaso = true;
 		}
-		else cout << "No se encontro el Mensaje" <<endl;
 	}
-
+	if (!BanderaDePaso)
+    {
+        cout << "No se encontro la etiqueta Mensaje" << endl;
+        return 0;
+    }
 }
 
 /*Si el programa se ejecuta opción “-v” debe mostrar en pantalla (al menos
@@ -95,25 +100,25 @@ repositorio), y el nombre de los integrantes del grupo de trabajo.*/
 else if (entrada == 2)
 {
     strftime(SalidaFecha,128,"%m-%d-%y",tlocal);
-    cout<<"La fecha actual:";
-    cout<<SalidaFecha<<endl;
+    cout << "La fecha actual:";
+    cout << SalidaFecha << endl;
     strftime(SalidaFecha,128,"%H:%M:%S",tlocal);
-    cout<<"La hora actual:";
-    cout<<SalidaFecha<<endl;
-    cout<<"Integrantes:\nRicardo Lopez\nCarlos Guerrero\nDaniel Gutierrez"<<endl;
-    cout<<"Fecha de compilacion: ";
+    cout << "La hora actual:";
+    cout <<SalidaFecha << endl;
+    cout << "Integrantes:\nRicardo Lopez\nCarlos Guerrero\nDaniel Gutierrez" << endl;
+    cout << "Fecha de compilacion: ";
     puts(__DATE__);
-    cout<<"Hora de compilacion: ";
+    cout << "Hora de compilacion: ";
     puts(__TIME__); //Fecha de compilacion.
-    cout<<"\nVersion del programa: 1.5.2\n"<<endl;
-    cout<<"Programa creado bajo el sistema operativo Ubuntu 13.10\n";
+    cout << "\nVersion del programa: 1.5.2\n" << endl;
+    cout << "Programa creado bajo el sistema operativo Ubuntu 13.10\n";
 }
 else
 {
-    cout<<"Opcion no valida. Ingresar:"<<endl;
-    cout<<""<<endl;
-    cout<<"-d para parsear la estructura XML de respuesta"<<endl;
-    cout<<"-v para mostrar en pantalla informaciones varias."<<endl;
+    cout << "Opcion no valida. Ingresar:" << endl;
+    cout << "" << endl;
+    cout << "-d para parsear la estructura XML de respuesta" << endl;
+    cout << "-v para mostrar en pantalla informaciones varias." << endl;
 }
 return 0;
 }
