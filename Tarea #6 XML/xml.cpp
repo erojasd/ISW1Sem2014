@@ -27,6 +27,9 @@ Para Usar el programa           : ./xml -d  || ./xml -v
 #include "src/pugixml.hpp"
 #include "src/pugixml.cpp"
 */
+#include "src/blowfish.h"
+#include "src/blowfish.cpp"
+#include <algorithm>
 
 /*Constantes*/
 #define _TIME_
@@ -118,6 +121,15 @@ nos parecio acertado usar este metodo para resolver la tarea
     }
 /*________________________________Fin de Bloque para conectar con la WEB_______________________________________*/
 
+    char key[] = "isw";
+
+    Blowfish blowfish;
+    blowfish.SetKey(key);
+    std::string decrypted;
+    blowfish.Decrypt(&decrypted, Mensaje);
+    std::cout << "" << std::endl;
+    std::cout << "El mensaje desencriptado fue: ";
+    std::cout << decrypted << std::endl;
 
 }
 
