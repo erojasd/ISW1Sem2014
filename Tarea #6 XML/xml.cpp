@@ -52,7 +52,7 @@ char SalidaFecha[128], Fila[100];
 string RespuestaWEB;
 
 // Mensaje a desencriptar
-char Mensaje [30];
+char Mensaje[15];
 
 /*Se crean las instancias de tipo CURL para la conexion con la WEB*/
 CURL *curl;
@@ -101,14 +101,16 @@ nos parecio acertado usar este metodo para resolver la tarea
        cout << "Los Datos obtenidos de la WEB fueron: ";
        cout << RespuestaWEB << endl;
        /* While utilizado para parsear el mensaje, siempre considerando que este mensaje estara
-       a 10 posiciones del inicio de la etiqueta "mensaje"*/
-       while(PivoteMensaje < 12)
+       a 10 posiciones del inicio de la etiqueta "mensaje" y tendrá un standar de largo 12*/
+       while(PivoteMensaje <= 12)
        {
            Mensaje[PivoteMensaje] = RespuestaWEB[PosMensaje];
+           //cout << Mensaje[PivoteMensaje] << endl;
            PosMensaje++;
            PivoteMensaje++;
        }
-       cout << "" <<endl;
+       cout << "" << endl;
+       Mensaje[PivoteMensaje-1] = '\0'; /*Correccion en el parseo, un error inesperado que no se le encontro explicacion*/
        cout << "EL mensaje parseado fue: ";
        cout << Mensaje << endl;
 
