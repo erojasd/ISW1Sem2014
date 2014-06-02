@@ -1,0 +1,358 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Metodologías Rup y Scrum
+\end_layout
+
+\begin_layout Author
+Ricardo López N.
+ Carlos Guerrero U.
+ Daniel Gutiérrez P.
+\end_layout
+
+\begin_layout Date
+04/06/2014
+\end_layout
+
+\begin_layout Abstract
+La metodología de software , para la ingeniería de software es una estructura
+ de trabajo realizada para planificar , controlar y estructurar un proceso
+ de desarrollo en sistemas de información.
+\end_layout
+
+\begin_layout Section
+Metodología Rup
+\end_layout
+
+\begin_layout Standard
+
+\size small
+RUP es un preceso de desarrollo de software, junto con el lenguaje unificado
+ de modelado de UML, se utiliza para el analisis ,diseño, implementación
+ y documentoción de sistema orientado a objetos no es un sistema con pasos
+ firmemente establecidos,sino un conjunto de metodologías adaptables al
+ contexto y necesidades de cada organización.
+\end_layout
+
+\begin_layout Standard
+El rup esta basado en 6 principios clave: 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Adaptar el proceso 
+\begin_inset Newline newline
+\end_inset
+
+El proceso se debera adaptar a las necesidades del cliente ya que es importante
+ interactuar con esas caracteristica propia del proyecto u organización,
+ permite tener en cuenta el alcance del proyecto en un area subformal para
+ hacer un proceso de satisfaccion del software.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Equilibrar propiedades 
+\begin_inset Newline newline
+\end_inset
+
+Esto permite encontrar el equilibrio que satisfaga los deseos de todos,si
+ algun participante tiene un requisito y no todos estan deacuerdo, esto
+ permite equilibrar y corregir desacuerdos que surjan en el futuro
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Demostrar valor iterativamente 
+\begin_inset Newline newline
+\end_inset
+
+Se entregan en etapas iteradas en forma interna, en cada iteracion se va
+ analizando la opinion de los inversores.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Colaboracion entre equipos 
+\begin_inset Newline newline
+\end_inset
+
+El desarrollo de software no lo hace una persona si no multiples equipos,
+ Debe haber una comunicación fluida para coordinar requisitos, desarrollo,
+ evaluaciones, planes, resultados, etc.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Elevar nivel abtraccion motiva 
+\begin_inset Newline newline
+\end_inset
+
+Motiva el concepto de reutilisable tales como patron de software, como 4GK
+ o framework tambien permite discusiones, diversos niveles y soluciones
+ arquitectonicas, esto representa la parte visual de la arquitectura,ejemplo
+ UML.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Enfocarce en la calidad 
+\begin_inset Newline newline
+\end_inset
+
+El control de calidad no debe realizarce al final de cada iteracion, es
+ decir, El aseguramiento de calidad forma parte del desarrollo que se implementa
+ en el proyecto y no de un grupo independiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metodología Scrum
+\end_layout
+
+\begin_layout Standard
+Scrum es un modelo de desarrollo ágil caracterizado por: Adoptar una estrategia
+ de desarrollo incremental, en lugar de la planificación y ejecución completa
+ del producto.
+ Basar la calidad del resultado más en el conocimiento tácito de las personas
+ en equipos autoorganizados, que en la calidad de los procesos empleados.
+ Solapamiento de las diferentes fases del desarrollo, en lugar de realizar
+ una tras otra en un ciclo secuencial o de cascada.
+\end_layout
+
+\begin_layout Subsection
+Características
+\end_layout
+
+\begin_layout Standard
+Las características más marcadas que se logran notar en Scrum serían: 
+\end_layout
+
+\begin_layout Itemize
+Gestión regular de las expectativas del cliente
+\end_layout
+
+\begin_layout Itemize
+Resultados anticipados,
+\end_layout
+
+\begin_layout Itemize
+Flexibilidad 
+\end_layout
+
+\begin_layout Itemize
+Adaptación
+\end_layout
+
+\begin_layout Itemize
+Retorno de inversión
+\end_layout
+
+\begin_layout Itemize
+Mitigación de riesgos
+\end_layout
+
+\begin_layout Itemize
+Productividad y calidad
+\end_layout
+
+\begin_layout Itemize
+Alineamiento entre cliente y equipo
+\end_layout
+
+\begin_layout Itemize
+Equipo motivado.
+ 
+\end_layout
+
+\begin_layout Standard
+Cada uno de estos puntos mencionados hacen que el Scrum sea utilizado de
+ manera regular en un conjunto de buenas prácticas para el trabajo en equipo
+ y de esa manera obtener resultados posibles.
+ Existen varias implementaciones de sistemas para gestionar el proceso de
+ Scrum, que van desde notas amarillas "post-it" y pizarras hasta paquetes
+ de software.
+ Una de las mayores ventajas de Scrum es que es muy fácil de aprender, y
+ requiere muy poco esfuerzo para comenzarse a utilizar.
+\end_layout
+
+\begin_layout Standard
+Un principio clave de Scrum es el reconocimiento de que durante un proyecto
+ los clientes pueden cambiar de idea sobre lo que quieren y necesitan (a
+ menudo llamado requirements churn), y que los desafíos impredecibles no
+ pueden ser fácilmente enfrentados de una forma predictiva y planificada.
+ Por lo tanto, Scrum adopta una aproximación pragmática, aceptando que el
+ problema no puede ser completamente entendido o definido, y centrándose
+ en maximizar la capacidad del equipo de entregar rápidamente y responder
+ a requisitos emergentes.
+\end_layout
+
+\begin_layout Subsection
+Roles en SCRUM
+\end_layout
+
+\begin_layout Paragraph
+Roles Principales
+\end_layout
+
+\begin_layout Enumerate
+Product Owner
+\end_layout
+
+\begin_layout Enumerate
+ScrumMaster (o Facilitador)
+\end_layout
+
+\begin_layout Enumerate
+Equipo de desarrollo
+\end_layout
+
+\begin_layout Paragraph
+Roles Secundarios
+\end_layout
+
+\begin_layout Enumerate
+Stakeholders (Clientes, Proveedores, Vendedores, etc)
+\end_layout
+
+\begin_layout Enumerate
+Administradores (Managers)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cuadro Comparativo
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/User/Desktop/final.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anexos
+\end_layout
+
+\begin_layout Standard
+Repositorio: 
+\begin_inset CommandInset href
+LatexCommand href
+name "GitHub"
+target "https://github.com/rlopezn/ISW1Sem2014/tree/master/Tarea%20%23%203%20Ayudantia%20-%20Metodologias"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
