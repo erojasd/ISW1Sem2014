@@ -1,3 +1,6 @@
-Programa realizado en Latex
+Informe realizado en Latex
 
-No sÈ quÈ m·s poner xD
+Se nos pide redactar un informe que hable sobre el resumen que hable sobre dos metodolog√≠as de desarrollo de software. 
+Una Agil y una cl√°sica.  Adjuntando un cuadro comparativo entre estas metodologias.
+
+Las metodologias desarrolladas fueron SCRUM como metodolog√≠a √°gil y la metodologia tradicional fue RUP
