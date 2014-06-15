@@ -8,6 +8,9 @@ $parametros['mensaje'] = $_POST['message'];
 $cliente = new SoapClient($wsdl);
 $resultado = $cliente->guardarMensaje($parametros);
 
-echo 'Mensaje Enviado!';
+$response = $resultado->return;
 
+echo "<pre>";
+print_r($response);
+echo "</pre>";
 ?>
