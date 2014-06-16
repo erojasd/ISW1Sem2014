@@ -13,5 +13,9 @@
 echo date("d-m-Y");
 ?></p>
 </h1>
+<form method="post" action="index.php"> 
+	<br> 
+	<input type="submit" value="Volver"> 
+</form>
 </body>
 </html>

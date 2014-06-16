@@ -5,6 +5,12 @@
         <title>Tarea 7 de Ingenier&iacutea de Software</title>
     </head>
     <body>
+	
+	<form method="post" action="index.php"> 
+		<br> 
+		<input type="submit" value="Volver"> 
+		<br>
+	</form>
 
         <form method="post" action="investigar.php">
         <table>

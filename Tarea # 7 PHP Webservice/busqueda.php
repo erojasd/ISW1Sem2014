@@ -1,3 +1,8 @@
+<form method="post" action="index.php"> 
+	<br> 
+	<input type="submit" value="Volver"> 
+</form>
+
 <?php
 //require_once('lib/nusoap.php');
 $wsdl = "http://sebastian.cl/isw-ws/wsISW?wsdl";
