@@ -1,16 +1,17 @@
-Tarea 4 Ayudantia CRUD Laravel
-
-Indicaciones
-
-*
-*
-*
 
 
+## Tarea 4 Ayudantia - Crud Laravel ##
+
+## Indicaciones ##
+
+1. Descargar el proyecto laravel en "Download ZIP"
+2. Descargar el script SQL "ayudante.sql" que se puede ejecutar en el motor de PostgreSQL
+3. 
+ 
 
 
 
-
+==========================================================================================================================
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
