@@ -1,9 +1,5 @@
-==Tarea 4 Ayudantia CRUD Laravel=
+Tarea 4 Ayudantia CRUD Laravel
 
-Indicaciones
--
--
--
 
 
 
