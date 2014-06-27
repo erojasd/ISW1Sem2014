@@ -25,10 +25,23 @@ Tener instalado como minimo:
 Expandir el arbol hasta encontrar Databases y crear una nueva base de datos llamada "ayudantia"<br>
 Posicionarse en el arbol en la nueva base de datos creada y presionar el boton de la interfez que dice SQL<br>
 Cargar el archivo ayudante.sql y ejecutarlo.<br>
-
+<br>
+Configurar Laravel: Abrir el archivo database.php de la carpeta app/config del proyecto y modificar las siguientes lineas
+'default' => 'pgsql',<br>
+<br>
+'pgsql' => array(
+'driver'   => 'pgsql', <br>
+'host'     => 'localhost', <br>
+'database' => 'ayudantia', <br>
+'username' => 'nuestro_nombre_de_usuario', <br>
+'password' => 'nuestro_password_de_servidor', <br>
+'charset'  => 'utf8', <br>
+'prefix'   => '', <br>
+'schema'   => 'public',<br>
+<br>
+Cargar los modelos al proyecto mediante el comando sudo composer auto-dump<br>
 6. Para poder visualizar y editar el proyecto se deben hacer unos tediosos tramites, se abre una terminal y se ejecutan los parametros descritos a continuacion:
-
-
+<br>
 Editar el archivo 000-default.conf para decirle al servidor apache que aqui se encuentra un proyecto nuevo mediante el siguiente código<br>
 
 sudo gedit /etc/apache2/sites-available/000-default.conf
