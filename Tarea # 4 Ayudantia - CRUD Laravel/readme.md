@@ -1,39 +1,58 @@
-
-
 ## Tarea 4 Ayudantia - Crud Laravel ##
+
+## Requisitos Previos ##
+
+Tener instalado como minimo:
+
+1. Un sistema Operativo, de preferencia Ubuntu 13.10 distribución de Linux
+2. Servidor apache version 2 | Xammp en Windows | Mampp en Mac
+2. PHP 5.5
+3. PostgreSQL version 9.1 o superior
+4. pgadmin III
+5. phppgadmin version 9.1 o superior
+6. Libreria Curl
+7. mycrypt
+8. Composer como medio para instalar repositorio laravel
 
 ## Indicaciones ##
 
-1. Descargar el proyecto laravel en "Download ZIP"
-2. Descargar el script SQL "ayudante.sql" que se puede ejecutar en el motor de PostgreSQL
-3. Disfrutar supongo.
- 
+1. Descargar completo el repositorio ISW1Sem2014 presionando en "Download ZIP"
+2. Descargar el script SQL "ayudante.sql" para generar la base de datos localmente
+3. Buscar en la carpeta que se descargo el directorio Tarea # 4 Ayudantia - CRUD Laravel-masters y cambiarle el nombre por T4ayudantia
+4. Copiar el directorio T4ayudantia a donde tenga el servidor apache corriendo por defecto es /var/www/ 
+5. Para crear la base de datos se debe ejecutar el script sql "ayudante.sql" con la aplicación pgadmin III, conectandose con el servidor local.
+
+Expandir el arbol hasta encontrar Databases y crear una nueva base de datos llamada "ayudantia"<br>
+Posicionarse en el arbol en la nueva base de datos creada y presionar el boton de la interfez que dice SQL<br>
+Cargar el archivo ayudante.sql y ejecutarlo.<br>
+
+6. Para poder visualizar y editar el proyecto se deben hacer unos tediosos tramites, se abre una terminal y se ejecutan los parametros descritos a continuacion:
 
 
+Editar el archivo 000-default.conf para decirle al servidor apache que aqui se encuentra un proyecto nuevo mediante el siguiente código<br>
 
-==========================================================================================================================
-## Laravel PHP Framework
+sudo gedit /etc/apache2/sites-available/000-default.conf
+<br>
+y se agregan las siguientes lineas
+<br>
+< Directory /var/www/T4ayudantia/><br>
+Options Indexes FollowSymLinks MultiViews<br>
+AllowOverride All<br>
+Order allow,deny<br>
+allow from all<br>
+< /Directory ><br>
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Luego se teclear una instruccion para confirmar el cambio que se realizo el siguiente codigo:<br>
+sudo a2enmod rewrite
+<br>
+Se reinicia Apache<br>
+sudo service apache2 restart
+<br>
+Debemos dar permiso de lectura y escritura al proyecto y para eso nos posicionamos en la carpeta del proyecto y tecleamos
+cd  /var/www/T4ayudantia/<br>
+sudo chown -R www-data:www-data app/storage
+<br>
+7. Finalmente Luego se acceda desde nuestro navegador favorito a la siguiente url
+localhost/T4ayudantia/public
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
-
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
-
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Probar la aplicación
