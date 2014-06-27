@@ -6,7 +6,7 @@
 
 1. Descargar el proyecto laravel en "Download ZIP"
 2. Descargar el script SQL "ayudante.sql" que se puede ejecutar en el motor de PostgreSQL
-3. 
+3. Disfrutar supongo.
  
 
 
